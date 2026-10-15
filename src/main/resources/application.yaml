@@ -1,0 +1,9 @@
+spring:
+  application:
+    name: be
+  profiles:
+    include: secret
+  jpa:
+    hibernate:
+      ddl-auto: update
+    open-in-view: false
