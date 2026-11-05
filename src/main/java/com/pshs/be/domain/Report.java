@@ -40,4 +40,8 @@ public class Report {
 
     @UpdateTimestamp
     private LocalDateTime updatedAt;
+
+    public void changeStatus(Status status) {
+        this.status = status;
+    }
 }
