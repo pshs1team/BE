@@ -7,3 +7,8 @@ spring:
     hibernate:
       ddl-auto: update
     open-in-view: false
+    defer-datasource-initialization: true # 테이블을 만든 뒤에 data.sql 실행
+  sql:
+    init:
+      mode: always # MySQL에서도 서버 켤 때 data.sql(목업 데이터) 실행
+      encoding: UTF-8
